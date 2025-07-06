@@ -84,13 +84,6 @@ demux #(.ADDR_WIDTH(SAMPLE_WORD_LENGTH)) demux_U1 (
     .sel (counter[0])
 );
 
-T_ff T_ff_U0 (
-    .q  (in_sel),
-    .in (valid_in_r),
-    .rst(rst),
-    .clk(clk)
-);
-
 reg signed [TWIDDLE_WORD_LENGTH -1 : 0] twiddle1_i_r,twiddle1_q_r;
 reg signed [SAMPLE_WORD_LENGTH  -1 : 0] in1_i_r,in1_q_r;
 

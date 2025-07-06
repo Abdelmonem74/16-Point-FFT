@@ -76,19 +76,3 @@ U2 (
 );
 
 endmodule
-
-/*
-force -freeze sim:/radix2/clk 1 0, 0 {50 ps} -r 100
-force -freeze sim:/radix2/rst 1 0
-force -freeze sim:/radix2/rst 0 5
-force -freeze sim:/radix2/rst 1 10
-force -freeze sim:/radix2/ff_en 1 0
-force -freeze sim:/radix2/twiddle2_q 0 0
-force -freeze sim:/radix2/twiddle1_q 0 0
-force -freeze sim:/radix2/in2_q 0 0
-force -freeze sim:/radix2/in1_q 0 0
-force -freeze sim:/radix2/in1_i 8'b01000000 0
-force -freeze sim:/radix2/in2_i 8'b00100000 0
-force -freeze sim:/twiddle1_i/in1_i 8'b01000000 0
-force -freeze sim:/twiddle2_i/in1_i 8'b01000000 0
-*/
